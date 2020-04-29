@@ -18,19 +18,21 @@ function StructureMenuWidget (props) {
       </div>
 
       <div className={styles.content}>
-        {props.structure.items.map(item => {
-          const Icon = getIconComponent(item)
-          return (
-            <div key={item.id}>
-              <Link className={styles.link} href={`/desk/${item.id}`}>
-                <div className={styles.iconWrapper}>
-                  <Icon />
-                </div>
-                <div>{item.title}</div>
-              </Link>
-            </div>
-          )
-        })}
+        {props.structure.items
+          .filter(item => item.type !== 'divider')
+          .map(item => {
+            const Icon = getIconComponent(item)
+            return (
+              <div key={item.id}>
+                <Link className={styles.link} href={`/desk/${item.id}`}>
+                  <div className={styles.iconWrapper}>
+                    <Icon />
+                  </div>
+                  <div>{item.title}</div>
+                </Link>
+              </div>
+            )
+          })}
       </div>
     </div>
   )

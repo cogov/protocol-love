@@ -12,12 +12,19 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/dashboard",
     "@sanity/desk-tool",
+    "@sanity/dashboard",
     "dashboard-widget-structure-menu",
     "dashboard-widget-document-list",
     "dashboard-widget-netlify",
-    "@sanity/code-input"
+    "asset-source-thispersondoesnotexist",
+    "@sanity/vision",
+    "asset-source-unsplash",
+    "@sanity/code-input",
+    "@sanity/color-input",
+    "mux-input",
+    "google-analytics",
+    "@sanity/production-preview"
   ],
   "parts": [
     {
@@ -31,6 +38,10 @@
     {
       "implements": "part:@sanity/dashboard/config",
       "path": "dashboardConfig.js"
+    },
+    {
+      "implements": "part:@sanity/production-preview/resolve-production-url",
+      "path": "./resolvePreviewUrl.js"
     }
   ]
 }

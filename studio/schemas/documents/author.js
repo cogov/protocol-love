@@ -25,7 +25,7 @@ export default {
     },
     {
       name: 'bio',
-      type: 'bioPortableText',
+      type: 'simpleBlockContent',
       title: 'Biography'
     }
   ],

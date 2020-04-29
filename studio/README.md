@@ -1,1 +1,1 @@
-# Protocol-Love-Website-studio
+<#< repository.name >#>-studio

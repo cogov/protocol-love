@@ -1,10 +1,10 @@
-describe('Sapper template app', () => {
+describe('Protocol.Love', () => {
 	beforeEach(() => {
 		cy.visit('/')
 	});
 
 	it('has the correct <h1>', () => {
-		cy.contains('h1', 'Great success!')
+		cy.contains('h1', 'Protocol.Love')
 	});
 
 	it('navigates to /about', () => {

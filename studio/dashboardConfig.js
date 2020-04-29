@@ -25,7 +25,7 @@ export default {
                 },
                 {
                   buildHookId: '5ea9839c55e7e6cefc787178',
-                  title: 'Blog Website',
+                  title: 'Protocol.Love Website',
                   name: 'Protocol-Love-Website',
                   apiId: '89b4cc19-7d0b-4b83-ba2f-c388d96e2765'
                 }
