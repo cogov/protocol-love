@@ -18,6 +18,11 @@ export default {
       description: 'Which nav menu should be shown, if any'
     },
     {
+      name: 'backgroundColor',
+      type: 'color',
+      title: 'Choose color'
+    },
+    {
       name: 'content',
       type: 'array',
       of: [
@@ -26,7 +31,9 @@ export default {
         { type: 'hero' },
         { type: 'infoRows' },
         { type: 'ctaColumns' },
-        { type: 'ctaPlug' }
+        { type: 'ctaPlug' },
+        { type: 'table' },
+        { type: 'code' }
       ]
     }
   ]

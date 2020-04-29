@@ -1,1 +1,1 @@
-<#< repository.name >#>-studio
+protocol-love-studio

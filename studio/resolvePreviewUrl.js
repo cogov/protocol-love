@@ -1,7 +1,7 @@
 const env = process.env.NODE_ENV || 'development'
 
 export default function resolvePreviewUrl (document) {
-  const baseUrl = env === 'development' ? 'http://localhost:8000' : '<#<deployments.web.url>#>'
+  const baseUrl = env === 'development' ? 'http://localhost:8000' : 'https://protocol-love.netlify.app'
   switch (document._type) {
     case 'route':
       return `${baseUrl}/${document.slug.current}`

@@ -28,7 +28,6 @@ export default {
       description: 'This is the path we will render the page at.',
       title: 'Path'
     },
-    /*
     {
       name: 'queries',
       type: 'array',
@@ -45,7 +44,6 @@ export default {
       title: 'Campaign',
       description: 'UTM for campaings'
     },
-    */
     {
       title: 'Use site title?',
       description:
@@ -63,8 +61,7 @@ export default {
       name: 'experiment',
       type: 'experiment',
       description: 'Use this to A/B/n test this route towards different pages'
-    }
-    /*
+    },
     {
       title: 'Include in sitemap',
       description: 'For search engines. Will be generateed to /sitemap.xml',
@@ -79,7 +76,6 @@ export default {
       type: 'boolean',
       fieldset: 'visibility'
     }
-    */
   ],
   initialValue: {
     useSiteTitle: false

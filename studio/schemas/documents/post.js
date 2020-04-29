@@ -63,9 +63,22 @@ export default {
       ]
     },
     {
+      name: 'backgroundColor',
+      type: 'color',
+      title: 'Choose color'
+    },
+    {
       name: 'body',
       type: 'bodyPortableText',
       title: 'Body'
+    },
+    {
+      name: 'body-markdown',
+      title: 'Body Markdown',
+      type: 'markdown',
+      options: {
+        minRows: 20
+      }
     }
   ],
   orderings: [

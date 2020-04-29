@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "sanity-gatsby-blog-studio",
+  "name": "protocol-love-studio",
   "version": "1.0.1",
   "main": "package.json",
-  "author": "Sanity <hello@sanity.io>",
+  "author": "Joel Serino <onetribe@loveisthemedicine.org>",
   "scripts": {
     "dev": "sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
@@ -34,9 +34,15 @@
     "react-player": "^1.15.2",
     "sanity-plugin-asset-source-thispersondoesnotexist": "0.0.1",
     "sanity-plugin-asset-source-unsplash": "^0.1.3",
+    "sanity-plugin-content-model-graph": "^1.1.0",
+    "sanity-plugin-dark-mode": "^0.0.32",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.8",
     "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
+    "sanity-plugin-dashboard-widget-notes": "^0.3.2",
+    "sanity-plugin-datatable": "^1.0.5",
     "sanity-plugin-google-analytics": "^0.2.6",
+    "sanity-plugin-markdown": "^1.0.1",
+    "sanity-plugin-media": "^0.2.10",
     "sanity-plugin-mux-input": "^0.2.1"
   },
   "devDependencies": {

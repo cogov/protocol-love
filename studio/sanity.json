@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "Protocol.Love Website"
+    "name": "Protocol.Love"
   },
   "api": {
-    "projectId": "5acyttwt",
+    "projectId": "5rrfu6ix",
     "dataset": "production"
   },
   "plugins": [
@@ -24,7 +24,13 @@
     "@sanity/color-input",
     "mux-input",
     "google-analytics",
-    "@sanity/production-preview"
+    "@sanity/production-preview",
+    "markdown",
+    "media",
+    "content-model-graph",
+    "dark-mode",
+    "datatable",
+    "dashboard-widget-notes"
   ],
   "parts": [
     {
@@ -42,6 +48,10 @@
     {
       "implements": "part:@sanity/production-preview/resolve-production-url",
       "path": "./resolvePreviewUrl.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/assetSources.js"
     }
   ]
 }

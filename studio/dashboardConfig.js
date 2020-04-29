@@ -1,11 +1,5 @@
 export default {
   widgets: [
-    {
-      name: 'sanity-tutorials',
-      options: {
-        templateRepoId: 'sanity-io/sanity-template-gatsby-blog'
-      }
-    },
     {name: 'structure-menu'},
     {
       name: 'project-info',
@@ -18,16 +12,16 @@ export default {
                 'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
               sites: [
                 {
-                  buildHookId: '5ea9839c9d7a3712cf6b2233',
+                  buildHookId: '5ea99b9649d06e01a4bc6bce',
                   title: 'Sanity Studio',
-                  name: 'Protocol-Love-Website-studio',
-                  apiId: '2871710a-85fa-4f1d-afbe-afefb7c7d8fd'
+                  name: 'protocol-love-studio',
+                  apiId: 'bc10f9c7-7a1e-40ae-96a1-f3b023006abf'
                 },
                 {
-                  buildHookId: '5ea9839c55e7e6cefc787178',
-                  title: 'Protocol.Love Website',
-                  name: 'Protocol-Love-Website',
-                  apiId: '89b4cc19-7d0b-4b83-ba2f-c388d96e2765'
+                  buildHookId: '5ea99b9673bb4b01b57666f2',
+                  title: 'Protocol Site',
+                  name: 'protocol-love',
+                  apiId: 'b10d199e-7ca2-4af6-aaac-10259842db33'
                 }
               ]
             }
@@ -36,10 +30,10 @@ export default {
         data: [
           {
             title: 'GitHub repo',
-            value: 'https://github.com/thinq4yourself/Protocol-Love-Website',
+            value: 'https://github.com/thinq4yourself/protocol-love',
             category: 'Code'
           },
-          {title: 'Frontend', value: 'https://Protocol-Love-Website.netlify.app', category: 'apps'}
+          {title: 'Frontend', value: 'https://protocol-love.netlify.app', category: 'apps'}
         ]
       }
     },
@@ -48,6 +42,7 @@ export default {
       name: 'document-list',
       options: {title: 'Recent blog posts', order: '_createdAt desc', types: ['post']},
       layout: {width: 'medium'}
-    }
+    },
+    { name: 'notes' }
   ]
 }

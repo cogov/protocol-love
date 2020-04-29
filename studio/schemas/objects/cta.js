@@ -33,7 +33,7 @@ export default {
       title: 'External link',
       name: 'link',
       type: 'string',
-      description: 'Example: https://www.sanity.io',
+      description: 'Example: http://protocol.love',
       fieldset: 'link'
     },
     {

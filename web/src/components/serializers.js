@@ -1,50 +1,28 @@
-// https://www.sanity.io/docs/what-you-need-to-know-about-block-text/presenting-block-text
-// https://github.com/movingbrands/svelte-portable-text
-import BlockContent from '@movingbrands/svelte-portable-text';
-// https://www.npmjs.com/package/@sanity/image-url
-import urlBuilder from '@sanity/image-url';
-import client from '../sanityClient';
-import Image from './Image.svelte';
-import Code from './Code.svelte';
-import Author from './Author.svelte';
-import Link from './Link.svelte';
+import React from "react";
+import Figure from "./Figure";
+import MainImage from "./MainImage";
+import ReactPlayer from "react-player";
+import InstagramEmbed from "react-instagram-embed";
+import LatexRenderer from "./Latex";
 
-const urlFor = source => urlBuilder(client).image(source);
+const AuthorReference = ({ node }) => {
+  if (node && node.author && node.author.name) {
+    return <span>{node.author.name}</span>;
+  }
+  return <></>;
+};
 
-export default {
-  marks: {
-    link: ({ children, mark }) => ({
-      component: Link,
-      childNodes: children,
-      props: mark,
-    }),
-  },
+const serializers = {
   types: {
-    mainImage: ({ node, children }) => ({
-      component: Image,
-      childNodes: children,
-      props: {
-        url: urlFor(node)
-          .width(800)
-          .auto('format')
-          .url(),
-        alt: node.alt,
-      },
-    }),
-    code: ({ node: { code, language } }) => ({
-      component: Code,
-      childNodes: [],
-      props: {
-        code,
-        language,
-      },
-    }),
-    authorReference: ({ children, node: { author } }) => ({
-      component: Author,
-      childNodes: children,
-      props: {
-        author,
-      },
-    }),
+    authorReference: AuthorReference,
+    mainImage: ({ node }) => <MainImage mainImage={node} />,
+    videoEmbed: ({ node }) => <ReactPlayer className="mt-6 mb-6" url={node.url} controls />,
+    instagram: ({ node }) => {
+      if (!node.url) return null;
+      return <InstagramEmbed url={node.url} className="container mx-auto mt-6 mb-6" />;
+    },
+    math: ({ node, isInline = false }) => <LatexRenderer isInline={isInline} latex={node.latex} />,
   },
 };
+
+export default serializers;

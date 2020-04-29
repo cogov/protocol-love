@@ -22,6 +22,11 @@ export default {
     {
       type: 'color',
       name: 'secondaryColor'
+    },
+    {
+      name: 'backgroundColor',
+      type: 'color',
+      title: 'Choose color'
     }
   ]
 }
