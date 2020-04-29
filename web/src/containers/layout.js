@@ -35,6 +35,7 @@ function LayoutContainer(props) {
             {...props}
             showNav={showNav}
             siteTitle={data.site.title}
+            backgroundColor={data.site.bgColor}
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}
             textWhite={textWhite}
