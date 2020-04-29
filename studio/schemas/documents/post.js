@@ -1,4 +1,5 @@
 import { format } from 'date-fns'
+import * as plugs from '../plugs'
 
 export default {
   name: 'post',
@@ -73,12 +74,19 @@ export default {
       title: 'Body'
     },
     {
-      name: 'bodyMarkdown',
-      title: 'Body Markdown',
-      type: 'markdown',
-      options: {
-        minRows: 20
-      }
+      name: 'content',
+      type: 'array',
+      of: [
+        { type: 'hero' },
+        { type: 'markdown' },
+        { type: 'uiComponentRef' },
+        { type: 'pricing' },
+        { type: 'infoRows' },
+        { type: 'ctaColumns' },
+        { type: 'ctaPlug' },
+        { type: 'table' },
+        { type: 'code' }
+      ]
     }
   ],
   orderings: [

@@ -26,9 +26,10 @@ export default {
       name: 'content',
       type: 'array',
       of: [
-        { type: 'pricing' },
-        { type: 'uiComponentRef' },
         { type: 'hero' },
+        { type: 'markdown' },
+        { type: 'uiComponentRef' },
+        { type: 'pricing' },
         { type: 'infoRows' },
         { type: 'ctaColumns' },
         { type: 'ctaPlug' },
