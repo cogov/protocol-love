@@ -73,7 +73,7 @@ export default {
       title: 'Body'
     },
     {
-      name: 'body-markdown',
+      name: 'bodyMarkdown',
       title: 'Body Markdown',
       type: 'markdown',
       options: {
