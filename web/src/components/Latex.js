@@ -1,4 +1,8 @@
-import React, { useState, useMemo, useCallback } from "react";
+import React, {
+  useState,
+  useMemo,
+  // useCallback
+} from "react";
 import KaTeX from "katex";
 import "katex/dist/katex.min.css";
 

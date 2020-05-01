@@ -5,7 +5,7 @@ import blog from './src/structure/blog'
 import PreviewIFrame from './src/components/previewIFrame'
 
 const hiddenDocTypes = listItem =>
-  !['navigationMenu', 'post', 'page', 'siteSettings', 'author', 'category'].includes(
+  !['footerMenu', 'navigationMenu', 'post', 'page', 'siteSettings', 'author', 'category'].includes(
     listItem.getId()
   )
 

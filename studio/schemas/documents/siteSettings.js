@@ -16,6 +16,13 @@ export default {
       type: 'openGraph'
     },
     {
+      title: 'Footer menus',
+      name: 'footerMenu',
+      type: 'array',
+      of: [{ type: 'footerMenu' }],
+      description: 'Which nav menus should be shown in the footer, if any'
+    },
+    {
       type: 'color',
       name: 'primaryColor'
     },

@@ -34,6 +34,7 @@ function LayoutContainer(props) {
           <Layout
             {...props}
             showNav={showNav}
+            footerNav={data.site.footerMenu}
             siteTitle={data.site.title}
             backgroundColor={data.site.bgColor}
             onHideNav={handleHideNav}

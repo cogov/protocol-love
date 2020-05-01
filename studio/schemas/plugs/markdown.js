@@ -6,7 +6,6 @@ export default {
       {
         name: 'title',
         type: 'string'
-  
       },
       {
         name: 'myMarkdown',
@@ -22,13 +21,11 @@ export default {
       select: {
         title: 'title',
         subtitle: 'subtitle',
-        markdown: 'markdown',
       },
       prepare({title, subtitle, markdown}) {
         return {
           title,
-          subtitle: `Code editor. ${subtitle}`,
-          markdown
+          subtitle: `Markdown editor. ${subtitle}`,
         }
       }
     }

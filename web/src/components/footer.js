@@ -1,7 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 
-const Footer = ({ siteTitle }) => (
+const Footer = ({ siteTitle, footerMenuItems }) => (
   <footer className="bg-white">
     <div className="container mx-auto  px-8">
       <div className="w-full flex flex-col md:flex-row py-6">

@@ -61,6 +61,15 @@ export const query = graphql`
           ...SanityImage
         }
       }
+      footerMenu {
+        footerMenu {
+          title
+          icon
+          navMenu {
+            ...NavMenu
+          }
+        }
+      }
     }
   }
 `;

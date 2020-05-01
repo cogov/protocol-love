@@ -115,10 +115,10 @@ const Page = (props) => {
         case "uiComponentRef":
           switch (c.name) {
             case "topWave":
-              el = <TopWave />;
+              el = <TopWave key={c._key} />;
               break;
             case "bottomWave":
-              el = <BottomWave />;
+              el = <BottomWave key={c._key} />;
               break;
             default:
               break;
@@ -136,10 +136,12 @@ const Page = (props) => {
   };
 
   const menuItems = page.navMenu && (page.navMenu.items || []);
-  const pageTitle = !data.route.useSiteTitle && page.title;
+  const footerItems = site.footerMenu && (site.footerMenu.items || []);
+  const pageTitle = !data.route.useSiteTitle && page.title ? page.title : "";
+  console.log('footerItems', footerItems)
 
   return (
-    <Layout navMenuItems={menuItems} textWhite={true}>
+    <Layout navMenuItems={menuItems} footerMenuItems={footerItems} textWhite={true}>
       <SEO
         title={pageTitle}
         description={site.description}

@@ -36,6 +36,7 @@ class Layout extends React.Component {
       showNav,
       siteTitle,
       navMenuItems,
+      footerMenuItems,
       textWhite = true,
     } = this.props;
     const { scrolled } = this.state;
@@ -51,7 +52,7 @@ class Layout extends React.Component {
           textWhite={textWhite}
         />
         <>{children}</>
-        <Footer siteTitle={siteTitle} />
+        <Footer siteTitle={siteTitle} footerMenuItems={footerMenuItems} />
       </>
     );
   }

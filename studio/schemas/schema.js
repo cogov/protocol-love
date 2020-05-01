@@ -7,6 +7,7 @@ import localeString from './objects/localeString'
 
 // document schemas
 import navMenu from './documents/navMenu'
+import footerMenu from './documents/footerMenu'
 import author from './documents/author'
 import category from './documents/category'
 import post from './documents/post'
@@ -37,7 +38,7 @@ const allPlugs = Object.values(plugs).map((plug) => {
 })
 
 export default createSchema({
-  name: 'blog',
+  name: 'protocolLove',
   types: schemaTypes // Built-in types
     // Our custom types
     .concat([
@@ -53,6 +54,7 @@ export default createSchema({
       siteSettings,
       post,
       navMenu,
+      footerMenu,
       page,
       category,
       author,
@@ -61,7 +63,7 @@ export default createSchema({
       instagram,
       videoEmbed,
       bodyPortableText,
-      excerptPortableText,
+      excerptPortableText
     ])
     .concat(allPlugs),
 })

@@ -15,7 +15,7 @@ const CTA = ({ label, title, body, ctas }) => (
 
     <div className="flex">
       {(ctas || []).map((c, i) => (
-        <div className="flex-1 text-gray-700 text-center py-2">
+        <div key={i} className="flex-1 text-gray-700 text-center py-2">
           <CTALink
             key={`cta_${i}`}
             {...c}
