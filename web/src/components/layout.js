@@ -35,6 +35,7 @@ class Layout extends React.Component {
       onShowNav,
       showNav,
       siteTitle,
+      siteLogo,
       navMenuItems,
       footerMenuItems,
       textWhite = true,
@@ -45,6 +46,7 @@ class Layout extends React.Component {
         <Header
           navMenuItems={navMenuItems}
           siteTitle={siteTitle}
+          siteLogo={siteLogo}
           onHideNav={onHideNav}
           onShowNav={onShowNav}
           showNav={showNav}

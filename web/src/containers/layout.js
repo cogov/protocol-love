@@ -6,6 +6,9 @@ const query = graphql`
   query SiteTitleQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      openGraph {
+        title
+      }
     }
   }
 `;
@@ -30,6 +33,7 @@ function LayoutContainer(props) {
             'Missing "Site settings". Open the Studio at http://localhost:3333 and some content in "Site settings"'
           );
         }
+        console.log('data.site', data.site)
         return (
           <Layout
             {...props}

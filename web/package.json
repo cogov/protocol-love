@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "protocol-love-site",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "author": "Joel Serino <onetribe@loveisthemedicine.org>",
   "scripts": {
     "tailwind:css": "tailwind build src/css/tailwind.src.css -c  tailwind.js -o src/css/tailwind.css",

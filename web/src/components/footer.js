@@ -38,15 +38,15 @@ const Footer = ({ siteTitle, footerMenuItems }) => (
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <span className="no-underline hover:underline text-gray-800 hover:text-orange-500">
-                FAQ
+                Get Started
               </span>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://sanity.io/docs"
+                href="#"
                 className="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >
-                Help
+                FAQ
               </a>
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
@@ -76,7 +76,7 @@ const Footer = ({ siteTitle, footerMenuItems }) => (
           <ul className="list-reset mb-6">
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://twitter.com/sanity_io"
+                href="#"
                 className="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >
                 Twitter
@@ -84,7 +84,7 @@ const Footer = ({ siteTitle, footerMenuItems }) => (
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://www.linkedin.com/company/sanity-io/"
+                href="#"
                 className="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >
                 Linkedin
@@ -105,7 +105,7 @@ const Footer = ({ siteTitle, footerMenuItems }) => (
             </li>
             <li className="mt-2 inline-block mr-2 md:block md:mr-0">
               <a
-                href="https://www.sanity.io/contact"
+                href="#"
                 className="no-underline hover:underline text-gray-800 hover:text-orange-500"
               >
                 Contact

@@ -876,7 +876,7 @@
   dependencies:
     "@types/node" ">= 8"
 
-"@sanity/cli@^1.148.0":
+"@sanity/cli@^1.149.9":
   version "1.149.9"
   resolved "https://registry.npmjs.org/@sanity/cli/-/cli-1.149.9.tgz#32bbe27d5807e94d932760c6785fed6bbbb5b732"
   integrity sha512-svC5aH+h/BFPMNvxXt6b9FxRc/yIQhY8jPK15h0V+dA4p20LnjXCK//Y+vvhGTqEZ06QLAQv/je2s4Lnzgz0jA==

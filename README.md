@@ -4,15 +4,20 @@ This is a simple starter project to get the protocol.love content on the Sanity 
 
 ## Features:
 
-- A blazing frontend with landing pages, page parts, nav, and blog built on [Gatsby.js](https://gatsbyjs.org)
-- Structured content and page builder using a customized [Sanity Studio](https://www.sanity.io)
-- Global deployment on [Netlify](https://netlify.com)
+- Structured content and custom site builder using a customized [Sanity Studio](https://www.sanity.io) instance - [studio](studio)
+  - Open source tools, free tier for three users
+  - Password in CFD, Workflowy, or elsehwere (see admins)
+- A blazingly fast frontend with landing pages, page parts, navigation, event mgmt, and blog
+- Tailwind CSS - A utility-first CSS framework for rapidly building custom designs
+- Current engine is built on [Gatsby.js](https://gatsbyjs.org)
+  - Next version is on [sapper](http://sapper.svelte.dev) - a simple migration
+- Global deployment on [Netlify](https://netlify.com) for studio and web app
 
-- Create landing pages and use custom page building components for custom web frontend (https://studio.protocol.love)
-- A simple blog with web preview from within the Studio (https://studio.protocol.love)
+- Create landing pages and use custom page building components for custom web frontend (https://protocol-love-studio.netlify.app)
+- A simple blog with web preview from within the Studio (https://protocol-love-studio.netlify.app)
 - Custom embedded objects in rich text for Instagram/Facebook posts, social media videos, LaTeX math etc, data tables, Markdown, and more
-- - Built in media manager in Studio)
-- Google Optimize A/B test facility
+- Built in media manager - [studio](studio)
+- A/B test facility
 
 
 ## Quick start
