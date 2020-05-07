@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "protocol-love-studio",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "package.json",
   "author": "Joel Serino <onetribe@loveisthemedicine.org>",
   "scripts": {

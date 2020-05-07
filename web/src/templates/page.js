@@ -34,6 +34,10 @@ export const query = graphql`
       }
     }
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
+      logo {
+        ...SanityImage
+        alt
+      }
       primaryColor {
         hex
       }
@@ -46,6 +50,7 @@ export const query = graphql`
         description
         image {
           ...SanityImage
+          alt
         }
       }
     }

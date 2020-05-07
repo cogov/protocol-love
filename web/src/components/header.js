@@ -34,7 +34,7 @@ const Header = ({ showNav, siteTitle, siteLogo, scrolled, navMenuItems = [], tex
           <div className="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              className="flex items-center p-1 text-orange-800 hover:text-gray-900"
+              className="flex items-center p-1 text-red-700 hover:text-gray-900"
             >
               <svg
                 className="fill-current h-6 w-6"

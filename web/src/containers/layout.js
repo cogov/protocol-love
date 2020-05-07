@@ -6,8 +6,15 @@ const query = graphql`
   query SiteTitleQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      logo {
+        ...SanityImage
+        alt
+      }
       openGraph {
         title
+        image {
+          ...SanityImage
+        }
       }
     }
   }
@@ -40,6 +47,7 @@ function LayoutContainer(props) {
             showNav={showNav}
             footerNav={data.site.footerMenu}
             siteTitle={data.site.title}
+            siteLogo={data.site.logo}
             backgroundColor={data.site.bgColor}
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}

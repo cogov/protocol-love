@@ -116,9 +116,17 @@ const detailsQuery = graphql`
   query DefaultSEOQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      logo {
+        ...SanityImage
+        alt
+      }
       openGraph {
         title
         description
+        image {
+          ...SanityImage
+          alt
+        }
       }
     }
   }
