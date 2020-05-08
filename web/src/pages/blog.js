@@ -15,9 +15,13 @@ export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
-      logo {
-        ...SanityImage
-        alt
+      openGraph {
+        title
+        description
+        image {
+          ...SanityImage
+          alt
+        }
       }
     }
     posts: allSanityPost(

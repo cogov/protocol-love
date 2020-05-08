@@ -34,10 +34,6 @@ export const query = graphql`
       }
     }
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
-      logo {
-        ...SanityImage
-        alt
-      }
       primaryColor {
         hex
       }
