@@ -8,6 +8,11 @@ const query = graphql`
       title
       openGraph {
         title
+        description
+        image {
+          ...SanityImage
+          alt
+        }
       }
     }
   }
@@ -40,6 +45,7 @@ function LayoutContainer(props) {
             showNav={showNav}
             footerNav={data.site.footerMenu}
             siteTitle={data.site.title}
+            siteLogo={data.site.openGraph.image}
             backgroundColor={data.site.bgColor}
             onHideNav={handleHideNav}
             onShowNav={handleShowNav}

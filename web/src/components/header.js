@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import CTALink from "./CTALink";
+import styles from './header.module.css'
 
 const Header = ({ showNav, siteTitle, siteLogo, scrolled, navMenuItems = [], textWhite = true }) => {
   let headerClass = "fixed w-full z-30 top-0 text-white";
@@ -16,7 +17,7 @@ const Header = ({ showNav, siteTitle, siteLogo, scrolled, navMenuItems = [], tex
   navContentClass += !textWhite || !scrolled ? " lg:bg-transparent bg-gray-100" : "";
   navContentClass += textWhite || scrolled ? " bg-white" : "";
 
-  let titleClass = "toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl";
+  let titleClass = "toggleColour no-underline hover:no-underline font-bold text-2xl";
   titleClass += !textWhite || scrolled ? " text-gray-800" : "";
   titleClass += textWhite || !scrolled ? " text-white" : "";
 
@@ -25,7 +26,7 @@ const Header = ({ showNav, siteTitle, siteLogo, scrolled, navMenuItems = [], tex
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link id="siteTitle" className={titleClass} to="/">
-            <img src={siteLogo} />
+            <img className={styles.logo} src={siteLogo.asset.url} />
             {siteTitle}
           </Link>
         </div>

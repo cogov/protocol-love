@@ -37,6 +37,12 @@
   }
 }
 
+.logo {
+  max-width: 55px;
+  display: inline-block;
+  margin-right: .5em;
+}
+
 .toggleNavButton {
   appearance: none;
   font-size: 25px;

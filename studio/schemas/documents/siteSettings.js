@@ -16,6 +16,14 @@ export default {
       type: 'openGraph'
     },
     {
+      title: 'Navigation menu',
+      name: 'mainNavMenu',
+      type: 'reference',
+      weak: false,
+      to: [{ type: 'navigationMenu' }],
+      description: 'Which nav menu should be shown by default'
+    },
+    {
       title: 'Footer menus',
       name: 'footerMenu',
       type: 'array',
