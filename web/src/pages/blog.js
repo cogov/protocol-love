@@ -15,6 +15,10 @@ export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      logo {
+        ...SanityImage
+        alt
+      }
     }
     posts: allSanityPost(
       limit: 6

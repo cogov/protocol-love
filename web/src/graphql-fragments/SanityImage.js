@@ -29,7 +29,7 @@ export const SanityImage = graphql`
           height
         }
       }
-    url
+      url
     }
   }
 `;

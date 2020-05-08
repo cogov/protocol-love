@@ -6,6 +6,10 @@ const query = graphql`
   query SiteTitleQuery {
     site: sanitySiteSettings(_id: { regex: "/(drafts.|)siteSettings/" }) {
       title
+      logo {
+        ...SanityImage
+        alt
+      }
       openGraph {
         title
         description
