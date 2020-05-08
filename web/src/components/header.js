@@ -26,7 +26,7 @@ const Header = ({ showNav, siteTitle, siteLogo, scrolled, navMenuItems = [], tex
       <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
         <div className="pl-4 flex items-center">
           <Link id="siteTitle" className={titleClass} to="/">
-            <img className={styles.logo} src={siteLogo.asset.url} />
+            <img className={styles.logo} src={siteLogo && siteLogo.asset.url} />
             {siteTitle}
           </Link>
         </div>

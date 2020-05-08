@@ -9,9 +9,9 @@ const CTA = ({ label, title, body, ctas }) => (
       <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-    <p className="my-4 text-3xl leading-tight">
+    <div className="my-4 text-3xl leading-tight">
       <PortableText blocks={body} />
-    </p>
+    </div>
 
     <div className="flex">
       {(ctas || []).map((c, i) => (
