@@ -46,7 +46,6 @@ export const query = graphql`
         description
         image {
           ...SanityImage
-          alt
         }
       }
     }
