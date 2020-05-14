@@ -9,5 +9,9 @@
 /lerna-debug.log
 
 # Misc
-/_sapper
+_sapper/studio/*
+_sapper/web/*
+
 .zip
+
+# Wordpress
