@@ -1,0 +1,6 @@
+[submodule "graphql"] 
+  path = graphql 
+  url = ssh://lovevjfk@loveisthemedicine.org:21098/home/lovevjfk/__graphql
+[submodule "wp-site"] 
+  path = wp-site/web 
+  url = ssh://lovevjfk@loveisthemedicine.org:21098/home/lovevjfk/cogov_html
