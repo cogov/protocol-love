@@ -38,6 +38,21 @@ http://cogov.love
 ## Next steps
 Documentation - also see individual projects README's in this (mono)repo
 
+
+## Git submodules
+It is sometimes annoying if you forget to initiate and update submodules. Fortunately, there are some tricks to make it easier:
+
+```git submodule update --init```
+This will update the submodules, and if they're not initiated yet, will initiate them.
+
+You can also have submodules inside of submodules. In this case you'll want to update/initiate the submodules recursively:
+
+```git submodule update --init --recursive```
+This is a lot to type, so you can make an alias:
+
+```git config --global alias.update '!git pull && git submodule update --init --recursive'```
+
+
 ## What it looks like?
 
 ![](./wp-site/web/wp-content/themes/main/screenshot.png)
