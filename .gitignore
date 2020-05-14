@@ -11,7 +11,7 @@
 # Misc
 _sapper/studio/*
 _sapper/web/*
-
+_gatsby
 .zip
 
 # Wordpress
