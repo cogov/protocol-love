@@ -56,7 +56,7 @@ This is a lot to type, so you can make an alias:
 ```git config --global alias.update '!git pull && git submodule update --init --recursive'```
 
 
-## What it may like
+## What it may look like
 
 ---
 
